@@ -1,0 +1,22 @@
+== Suggested Tools
+The following are some tools that should or can be used for python development.
+
+Misc::
+* link:https://jenkins.io/doc/[Jenkins] - mandatory
+* link:http://flake8.pycqa.org/en/latest/[flake8] - mandatory with DM exceptions
+* link:http://www.pydocstyle.org/en/latest/[pydocstyle] - checks compliance with docstrings
+* link:http://staff.washington.edu/rowen/ts_salobj/ts_salobj/index.html[salobj] - The default library for python CSC development
+* third party packages - usually beneficial
+* link:https://pipelines.lsst.io/[LSST Stack] - Primarily for Scheduler and WEP
+
+//
+Suggested IDEs & text editors::
+* link:https://www.jetbrains.com/pycharm/[pycharm]
+* link:https://wingware.com/[wing]
+* link:http://www.pydev.org/[pydev]
+* link:https://www.vim.org/[vim]
+* link:https://www.nano-editor.org/[nano]
+* link:https://www.gnu.org/software/emacs/[emacs]
+* link:https://atom.io/[atom]
+* link:https://code.visualstudio.com/[visual studio code]
+* link:https://visualstudio.microsoft.com/[visual studio]

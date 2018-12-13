@@ -1,0 +1,6 @@
+== Documentation
+Python documentation uses link:http://www.sphinx-doc.org/en/master/[Sphinx] and therefore any source code documentation is recommended to use Sphinx. 
+Sphinx uses link:http://docutils.sourceforge.net/rst.html[ReST] as its markup language of choice. Sphinx can also use markdown with an extension. Team documentation uses confluence wiki as a major source of team documents. 
+For readmes, markdown is supported by github natively, although ReST and asciidoc are supported as well.
+One recommendation is to include class diagrams based on the python source code. 
+There are tools to help bolster this process but are not listed here yet.

@@ -1,0 +1,54 @@
+== Style
+
+Python has many recommendations for writing python code. 
+One of the primary sources of truth regarding styling is the Python Enhancement Proposal number 8 (PEP-8) which codifies the standard Python style guide. 
+The Telescope and Site Software Team will endeavor to follow this guide except in cases regarding salobj do_* methods which inherit from SAL naming conventions. 
+As these are recommendations, any function or method names should follow consistent patterns, but is not enforced by python itself. 
+If a convention on an LSST stack package is to use lowerCamelCase then endeavor to follow that convention. 
+If working with a package that uses underscore_separation then one should follow that convention. 
+However, try to avoid mixing the two in order to improve readability except in the aforementioned exceptions regarding SAL compatibility.
+
+=== PEP-8
+Here are key excerpts from PEP-8 which is linked link:https://www.python.org/dev/peps/pep-0008/[here] in its entirety. 
+This document deals with pretty much everything regarding python code and so I will endeavor to highlight relevant points.
+
+* spaces instead of tabs for indentation
+** four spaces per indentation
+* Class names are UpperCamelCase
+* method, function names and attributes are lower_underscore case.
+* One import per line except for from module import lines
+* The import order should be 
+. standard library
+. third party imports
+. application specific imports
+* module and package names should be lowercase and strive to be one word
+
+There are many tools that have been written to help ensure these standards are met. 
+Current recommendation is to use flake8 to ensure compatiblity with DM packages. The goal is not perfection or total compliance, it is strive for consistency and readablity. 
+So any small deviations or things like SAL naming conventions will be noted and dealt with accordingly. 
+
+=== DM Integration
+Since several of our software products work with the LSST stack, those packages must comply DM's software link:https://developer.lsst.io/python/style.html#dm-python-style-guide[standards for python].
+As a result, the TSSW team shall endeavor to follow these DM exceptions to PEP-8 compliance which are listed below for convience.
+
+Exceptions to PEP-8(compliance with DM code)::
+* E133
+* E226
+* E228
+* Lines can be at maximum 110 characters
+* W504
+* N802
+* N803
+* N806
+
+These should all be configured by a tool such as flake8 or any other tools which checks compliance with these kinds of things.
+
+=== Docstring
+We will be using Numpydocstring as our guide as outlined by the python documentation standard. 
+The current version of the guide is linked link:https://numpydoc.readthedocs.io/en/latest/format.html[here]. 
+
+=== Version Handling
+Something that should be dealt with by the TSSW developer guide.
+
+Suggested Tools::
+* setuptools-scm

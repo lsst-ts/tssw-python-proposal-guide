@@ -1,0 +1,20 @@
+= LSST-TSSW Python Guide Proposal
+Telescope and Site Software
+:revnumber: {docdate}
+:toc:
+
+IMPORTANT: The following document is not approved nor authorized by anyone. It only serves as a proposal for guidelines.
+
+include::style_guide.adoc[]
+
+include::docker.adoc[]
+
+include::python_development_packaging.adoc[] 
+
+include::unit_testing.adoc[]
+
+include::documentation.adoc[]
+
+include::suggested_tools.adoc[]
+
+include::continous_integration_with_jenkins.adoc[]

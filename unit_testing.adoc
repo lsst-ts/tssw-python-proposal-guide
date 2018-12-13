@@ -1,0 +1,8 @@
+== Unit Testing
+Python has many unit test frameworks. The current recommendation is to use pytest as that fits with current implementation standards regarding integration with Data Management's software archeitecture. 
+
+=== Pytest
+Pytest is our unit test framework of choice because it fits with DM's requirements by offering a choice between the unittest built-in library and the new pytest syntax. Essentially pytest is both a wrapper and extension of the built-in library and so is fairly flexible as a result. You can find the documentation link:https://docs.pytest.org/en/latest/[here]. 
+
+=== Mocking
+Mocking in unit tests are important for simulating logic that is unable to be inherently tested by software logic such as hardware and other such things. Mocking is the idea that when an object is created that is necessary for the application to function, it should be replaced by an object that merely returns a value or result. For example, a device that is connected to a serial port would be mocked by creating a mocked serial object that returns the expected output in a given scenario. Python3 has a mock object library built in and ready to use. That documentation is located link:https://docs.python.org/3.6/library/unittest.mock.html[here]. For integration with Pytest, we can use an extension pytest-mock. Its documentation is located link:https://github.com/pytest-dev/pytest-mock/blob/master/README.rst[here]. This extension just makes mocks easier to handle in the pytest-framework.
