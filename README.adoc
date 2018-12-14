@@ -1,21 +1,14 @@
 = Readme
 
-The following document is written in link:https://asciidoctor.org/[asciidoc] which is processed by Asciidoctor and the pdf version is built by asciidoctor-pdf. 
-The writer's guide is located link:https://asciidoctor.org/docs/asciidoc-writers-guide/[here]. 
-A more in depth user manual is located link:https://asciidoctor.org/docs/user-manual[here]. 
-
-== Installation Instructions Pertaining To Asciidoctor
-Installation instructions for the various OS and distributions are located link:https://asciidoctor.org/#installation[here]. 
-Asciidoctor can be installed on Linux, Windows and MacOS X as well as using a docker container.
+This document is written in ReST using sphinx as the builder.
 
 == Build Document
+You can build the document the standard sphinx way using the Makefile produced by sphinx.
+
 [source, bash]
 ----
-asciidoctor-pdf ./index.adoc
-// or
-asciidoctor -b pdf index.adoc <1>
+make html
 ----
-<1> For an explanation of these lines consult link:https://asciidoctor.org/docs/convert-documents/[this].
 
 == FAQ
 [qanda]
@@ -23,10 +16,6 @@ What is this document?::
 An attempt to organize Telescope and Site's Software Team's knowledge of python into one hopefully handy document. 
 It should help serve as a starting guide for ensuring swift integration with TSSW's python applications.
 
-Why is this document written in asciidoc?::
-I wanted to see how it would work out as a markup language for writing this type of document. 
-I figured it would be beneficial as an experiment to see how it works as a way of handling certain kinds of document. 
-
 I want to contribute to this document. How do I do that?::
-Follow the installation instructions located in this readme which point to the writer's guide and user manual for asciidoc. 
-You can also open an issue here on the github repository or comment on the confluence page with suggestions or proposal for improvement.
+Use pip install -r requirements.txt to install dependencies. 
+Contributions are welcome in the form of pull requests and comments, suggestions, improvements.

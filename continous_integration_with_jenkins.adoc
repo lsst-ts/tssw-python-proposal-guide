@@ -1,3 +1,0 @@
-== Continous Integration with Jenkins
-For working with CI using python, we have an example file located link:https://github.com/lsst-ts/ts_tcs_ofcPython/blob/develop/Jenkinsfile[here]. 
-Jenkins can handle pulling docker images from dockerhub and is useful for unit testing our applications.
