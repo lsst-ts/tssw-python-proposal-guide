@@ -2,6 +2,13 @@
 
 This document is written in ReST using sphinx as the builder.
 
+== Setting up environment
+Inside of a virtual environment, run the following commands.
+[source, bash]
+----
+pip install -r requirements.txt
+----
+
 == Build Document
 You can build the document the standard sphinx way using the Makefile produced by sphinx.
 
